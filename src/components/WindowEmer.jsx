@@ -29,7 +29,7 @@ const WindowEmer = () => {
 
   const getEntidad = async(id)=>{
     try {
-      const entidadGet = await axios.get(`http://localhost:4100/entidades/${id}`)
+      const entidadGet = await axios.get(`https://back-end-ivans-projects-8fb2aeb3.vercel.app/entidades/${id}`)
       //console.log(entidad.data)
       setEntidad(entidadGet.data)
       setFormulario(entidadGet.data)
@@ -42,7 +42,7 @@ const WindowEmer = () => {
 
   const putSubmit = async(id, formu)=>{
     try {
-      const entidadPost = await axios.put(`http://localhost:4100/entidades/${id}/edit`, formu)
+      const entidadPost = await axios.put(`https://back-end-ivans-projects-8fb2aeb3.vercel.app/entidades/${id}/edit`, formu)
 
       const newSearchParams = new URLSearchParams(urlParams)
       newSearchParams.set('edit','false')
@@ -57,7 +57,7 @@ const WindowEmer = () => {
 
   const deleteEntidad = async(id)=>{
     try {
-      const entidadDelete = await axios.delete(`http://localhost:4100/entidades/${id}/edit`)
+      const entidadDelete = await axios.delete(`https://back-end-ivans-projects-8fb2aeb3.vercel.app/entidades/${id}/edit`)
 
       setUrlParams(urlParams.delete('entidad'))
       setUrlParams(urlParams.delete('edit'))
@@ -75,7 +75,7 @@ const WindowEmer = () => {
   const createEntidad = async(formu)=>{
   
     try {
-      const create = await axios.post(`http://localhost:4100/entidades/create`, formu)
+      const create = await axios.post(`https://back-end-ivans-projects-8fb2aeb3.vercel.app/entidades/create`, formu)
       setUrlParams(urlParams.delete('create'))
 
       const newSearchParams = new URLSearchParams(urlParams)

@@ -16,7 +16,7 @@ export const EntidadesContextProvider = ({children}) => {
 
     const axiosApi = useCallback(async ()=>{
       try {
-        const entidades = await axios.get('http://localhost:4100/entidades')
+        const entidades = await axios.get('https://back-end-ivans-projects-8fb2aeb3.vercel.app/entidades')
 
         setEntidadesDB(entidades.data)
 
