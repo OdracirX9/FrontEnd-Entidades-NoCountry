@@ -19,7 +19,7 @@ const inicio = () => {
     <>
       <div className="relative z-40 w-full h-max">
         <div className="relative z-20 w-full h-[calc(100dvh_+_100px)]">
-          <div className="absolute top-0 w-full h-full bg-[url('src/assets/images/landingPage.jpg')] bg-fixed bg-cover bg-bottom">
+          <div className="absolute top-0 w-full h-full bg-[url('/images/landingPage.jpg')] bg-fixed bg-cover bg-bottom">
             <div className="relative z-20 top-0 w-full h-full flex justify-center items-center bg-[linear-gradient(90deg,_rgba(50,50,50,1)_0%,_rgba(27,27,27,0.28)_48%,_rgba(0,0,0,1)_100%)]">
               <h2 className="text-4xl w-3/6 text-center font-bold text-white">
                 Lo mejor de nuestra tarea es que podemos ayudar a los seres mas
